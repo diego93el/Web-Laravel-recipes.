@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+    background-image: url("background.png");
+    background-repeat: round;
+    min-height: 100vh;
+    background-position: center top;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+main{
+    margin: 20px;
+    min-height: 100%;
+
+  
+    
+}
+footer{
+    position:absolute;
+    bottom: 0;
+    margin-top: 80px;
+    width: 100%;
+}
+
+
+.cont{
+    position: relative;
+    margin-top: 1%;
+    left: 2%;
+    width: 95%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: #192938;
+    border-radius: 20px;
+    
+
+}
+.cont .ima {
+    width: 8%;
+}
+.logo {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #F0C808;
+}
+h4{
+    padding: 10px;
+    border: 1px solid #F0C808;
+    background-color: #ff44;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.navegador .navA:hover::after{
+    transform: scaleX(1); 
+    transform-origin: left;
+    
+
+
+}
+.navegador .btnLogin-popup {
+    width:8%;  
+    height: 2%;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    transition: .5s;
+}
+
+.navegador .btnLogin-popup:hover{
+    background: #F0C808;
+    color: #192938;
+    border: 2px solid #F0C808;
+
+}
+.navegador .navA{
+    position: relative;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navegador .navA::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #D42828;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navegador .navA:hover{
+color: #F0C808;
+}
+
+
+.tabla {
+    position: relative;
+    background: transparent;
+    border: 2px solid #F0C808;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5) ;
+    width: 82vw;
+    overflow: hidden;
+}
+.tabla .cabezal{
+    margin-top: 5%;
+    width: 100%;
+    height: 10%;
+    background-color: #ff44;
+    display: flex;
+    justify-content: space-evenly;
+    padding: .8rem 1rem;
+    color: #000000;
+}
+
+.tabla .tbody{
+    width: 95%;
+    background-color: #fffb;
+    margin: .8rem auto;
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.tabla .buscador{
+    margin: 5%;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+}
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+.tabla img{
+    width: 120px;
+    height: auto;
+    border-radius: 48%;
+}
+table, th, td{
+    padding: .5rem;
+}
+.contenedor{
+    position: relative;
+    left: 27%;
+    width: 50%;
+    background: transparent;
+    border: 2px solid #F0C808;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contenedor .caja-form{
+    width: 100%;
+    padding: 40px;
+}
+.caja-form h2{
+ color: #192938;
+ font-size: 2em;
+ text-align: center;
+}
+.caja-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #192938 ;
+    margin: 30px 0;
+}
+.caja-input input:focus~label,
+.caja-input input:valid~label{
+    top: -5px;
+}
+.caja-input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.caja-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+#creado, #tiempo, #ingrediente_id, #instrucion, #nombre{
+    font-size: 2em;
+    color: #fff;
+}
+.recuerdame{
+    font-size: 1em;
+    color: #192938;
+    margin: -15px 0 15px;
+    
+}
+.recuerdame label input{
+    accent-color: #192938;
+    margin-right: 3px;
+}
+.recuerdame a{
+    color: #192938;
+    text-decoration: none;
+}
+.recuerdame a:hover{
+    text-decoration: underline;
+}
+.boton {
+    width: 100%;
+    height: 45px;
+    background:#F0C808;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.container-fluid {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+    background-color:#192938 ;
+    color: #fff;
+    height: 20vh;
+
+}
+.container-fluid .imag{
+    width: 2.5%;
+}
+.container-fluid h5{
+    font-size: .8em;
+    text-transform: capitalize;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color:#fff
+}
+.socials a ion-icon{
+    font-size: 1rem;
+    transition: color .4 ease;
+}
+.socials a:hover ion-icon{
+    color: #F0C808;
+}
+
